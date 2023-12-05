@@ -89,8 +89,8 @@
 <style>
   /*=============== HOME ===============*/
   @font-face {
-    font-family: 'WasserRegular';
-    src: url('/wasser.regular.ttf') format('truetype'); /* Use format('truetype') for .ttf files */
+    font-family: 'SwimmingPoolDemo';
+    src: url('/SwimmingPoolDemo-vm6VD.ttf') format('truetype'); /* Use format('truetype') for .ttf files */
   }
 
 
@@ -283,9 +283,10 @@
 
     .home-title2 {
       color: var(--darkblue);
-      font-size: 2rem;
+      font-size: 4rem;
       margin-bottom: 0.5rem;
-      margin-top: -15em;
+      margin-top: -7em;
+      font-family: 'SwimmingPoolDemo', sans-serif !important;
     }
 
     .home-scroll2 {
