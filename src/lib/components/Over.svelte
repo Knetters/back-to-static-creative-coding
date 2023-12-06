@@ -51,11 +51,11 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 10%;
+    gap: 1rem;
   }
 
   .text-container {
-    width: 50%;
+    width: 100%;
   }
 
   img {

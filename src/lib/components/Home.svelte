@@ -88,12 +88,6 @@
 
 <style>
   /*=============== HOME ===============*/
-  @font-face {
-    font-family: 'SwimmingPoolDemo';
-    src: url('/SwimmingPoolDemo-vm6VD.ttf') format('truetype'); /* Use format('truetype') for .ttf files */
-  }
-
-
   main {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -113,6 +107,12 @@
     font-size: 1rem;
     font-weight: var(--font-semi-bold);
     margin-bottom: 0.5rem;
+  }
+
+  .home-scroll {
+    color: var(--green);
+    font-size: 0.8em;
+    text-decoration: none;
   }
 
   /* PARALLAX */
@@ -278,15 +278,13 @@
       display: block;
       font-weight: var(--font-semi-bold);
       margin-bottom: var(--mb-0-75);
-      
     }
 
     .home-title2 {
       color: var(--darkblue);
-      font-size: 4rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
-      margin-top: -7em;
-      font-family: 'SwimmingPoolDemo', sans-serif !important;
+      margin-top: -15em;
     }
 
     .home-scroll2 {
