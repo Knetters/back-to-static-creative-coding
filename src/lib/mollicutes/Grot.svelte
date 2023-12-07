@@ -8,14 +8,14 @@
 
 <section>
     <img class="cave-ground" src="/assets/footergrot1.png" alt="">
-    <!-- <img class="water-drup" src="/assets/drup.png" alt=""> -->
+    <img class="water-drup" src="/assets/drup.png" alt="">
     <img class="cave-water" src="/assets/footergrot2.png" alt="">
 </section>
 
 <style>
     section {
         margin-top: 10rem;
-        margin-bottom: -2rem;
+        margin-bottom: -4rem;
         position: relative;
     }
 
@@ -27,7 +27,7 @@
 
     .cave-ground {
         position: relative;
-        z-index: 9999;
+        z-index: 10;
         display: block;
     }
 
@@ -39,9 +39,19 @@
 
     .water-drup {
         width: 1rem;
-        position: relative;
-        z-index: 10;
+        z-index: 100;
+        transform: translateY(-90vw);
         margin-left: 30%;
-        margin-top: -200px;
+        /* border: 3px solid red; */
+        animation: fall 2s ease-in infinite;
+    }
+
+    @keyframes fall {
+        0% {
+            transform: translateY(-60vw);
+        }
+        100% {
+            transform: translateY(0vw);
+        }
     }
 </style>
