@@ -8,7 +8,7 @@
 
 <section>
     <img class="cave-ground" src="/assets/footergrot1.png" alt="">
-    <div class="water-drup">druppel</div>
+    <img class="water-drup" src="/assets/drup.png" alt="">
     <img class="cave-water" src="/assets/footergrot2.png" alt="">
 </section>
 
