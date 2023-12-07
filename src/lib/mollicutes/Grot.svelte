@@ -12,6 +12,8 @@
     <img class="cave-water" src="/assets/footergrot2.png" alt="">
 </section>
 
+<img class="water-drup" src="/assets/drup.png" alt="">
+
 <style>
     section {
         margin-top: 10rem;
