@@ -39,7 +39,6 @@
 
     .water-drup {
         width: 1rem;
-background-color: red;
         z-index: 100;
         transform: translateY(-90vw);
         margin-left: 30%;
