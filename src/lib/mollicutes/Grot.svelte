@@ -40,7 +40,7 @@
     .water-drup {
         width: 1rem;
         z-index: 100;
-        transform: translateY(-90vw);
+        transform: translateY(-60vw);
         margin-left: 30%;
         /* border: 3px solid red; */
         animation: fall 2s ease-in infinite;
