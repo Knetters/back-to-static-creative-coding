@@ -8,7 +8,7 @@
 
 <section>
     <img class="cave-ground" src="/assets/footergrot1.png" alt="">
-    <img class="water-drup" src="/assets/drup.png" alt="">
+    <div class="water-drup"></div>
     <img class="cave-water" src="/assets/footergrot2.png" alt="">
 </section>
 
@@ -39,6 +39,7 @@
 
     .water-drup {
         width: 1rem;
+background-color: red;
         z-index: 100;
         transform: translateY(-90vw);
         margin-left: 30%;
