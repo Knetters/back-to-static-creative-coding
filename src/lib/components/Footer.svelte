@@ -1,9 +1,17 @@
 <script>
+    import Grot from "../mollicutes/Grot.svelte";
+
 </script>
+
+<Grot />
 
 <section class="container">
   <article>
-    <img class="logo" src="/assets/logo_spatwater.png" alt="Logo van SPATwater">
+    <img
+      class="logo"
+      src="/assets/logo_spatwater.png"
+      alt="Logo van SPATwater"
+    />
     <h3>Een nieuwe generatie hydrologen</h3>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +33,15 @@
     <h2>Over</h2>
     <ul>
       <li><a href="#over" aria-label="Over ons">Over ons</a></li>
-      <li><a href="#klimaatadaptatie" aria-label="Klimaatadaptatie.">Klimaatadaptatie</a></li>
-      <li><a href="#waterkwaliteit" aria-label="Waterkwaliteit.">Waterkwaliteit</a></li>
+      <li>
+        <a href="#klimaatadaptatie" aria-label="Klimaatadaptatie."
+          >Klimaatadaptatie</a
+        >
+      </li>
+      <li>
+        <a href="#waterkwaliteit" aria-label="Waterkwaliteit.">Waterkwaliteit</a
+        >
+      </li>
       <li><a href="#brain" aria-label="b-RAIN">b-RAIN</a></li>
       <li><a href="#projecten" aria-label="Projecten">Projecten</a></li>
       <li><a href="#kennisbank" aria-label="Kennisbank">Kennisbank</a></li>
@@ -56,15 +71,14 @@
   <article class="copyright">
     <p>© 2023 SPATwater. All rights reserved.</p>
   </article>
-
 </section>
 
 <style>
   .logo {
-      width: 10rem;
-      height: auto;
-      margin: 0.5rem -0.1rem;
-    }
+    width: 10rem;
+    height: auto;
+    margin: 0.5rem -0.1rem;
+  }
 
   h2 {
     color: var(--spat);
@@ -108,13 +122,13 @@
   }
 
   section {
-    height: 100vh; 
-    background-color: var(--darkblue);
+    height: 100vh;
+    background-color: #30343a;
     position: relative;
   }
 
   .container {
-    padding: 2rem; 
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -132,7 +146,7 @@
     z-index: 1;
   }
 
-.address {
+  .address {
     position: absolute;
     bottom: 0rem;
     margin-bottom: 1rem;
@@ -158,7 +172,7 @@
       margin-top: 2rem;
     }
     section {
-      height: 60vh; 
+      height: 60vh;
     }
     .container {
       flex-direction: row;
@@ -168,5 +182,4 @@
       margin-bottom: 0.5rem;
     }
   }
-  
 </style>
