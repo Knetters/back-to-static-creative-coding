@@ -30,7 +30,7 @@
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100vw;
-    z-index: 999;
+    z-index: 100;
 
     & ul {
       margin: 0;
