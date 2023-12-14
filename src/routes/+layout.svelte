@@ -2,35 +2,50 @@
     import { onMount } from 'svelte';
   
     onMount(() => {
-      const menu = document.querySelector('.fullscreen-menu');
-      let canSparkle = true;
-  
-      menu.addEventListener('mousemove', createSparkle);
-  
-      function createSparkle(event) {
-        if (!canSparkle) return;
-  
-        const sparkle = document.createElement('div');
-        sparkle.classList.add('sparkle');
-        sparkle.style.left = `${event.clientX}px`;
-        sparkle.style.top = `${event.clientY}px`;
-        menu.appendChild(sparkle);
-  
-        sparkle.addEventListener('animationend', () => {
-          sparkle.remove();
-          canSparkle = true;
+        const menuLink = document.getElementById("menu-link");
+        const terug = document.getElementById("terug");
+        const menu = document.querySelector('.fullscreen-menu');
+
+        menuLink.addEventListener('click', () => {
+            menu.classList.toggle("active");
+            menuLink.style.display = "none"
+            document.body.style.overflow = "hidden";
         });
-  
-        setTimeout(() => {
-          sparkle.remove();
-          canSparkle = true;
-        }, 500); // Adjust this time to control the delay between sparkles
-      }
+
+        terug.addEventListener('click', () => {
+            menu.classList.toggle("active");
+            menuLink.style.display = "block"
+            document.body.style.overflow = "auto";
+        });
+
+        let canSparkle = true;
+    
+        menu.addEventListener('mousemove', createSparkle);
+    
+        function createSparkle(event) {
+            if (!canSparkle) return;
+    
+            const sparkle = document.createElement('div');
+            sparkle.classList.add('sparkle');
+            sparkle.style.left = `${event.clientX}px`;
+            sparkle.style.top = `${event.clientY}px`;
+            menu.appendChild(sparkle);
+    
+            sparkle.addEventListener('animationend', () => {
+            sparkle.remove();
+            canSparkle = true;
+            });
+    
+            setTimeout(() => {
+            sparkle.remove();
+            canSparkle = true;
+            }, 500); // Adjust this time to control the delay between sparkles
+        }
     });
   </script>
 
 <div class="fullscreen-menu">
-    <span>Terug</span>
+    <span id="terug">Terug</span>
     <div class="inner-content">
         <ul>
             <li>Over</li>
@@ -42,10 +57,20 @@
         </ul>
     </div>
 </div>
+<div class="menu-row">
+    <span id="menu-link">Menu</span>
+</div>
 
 <slot />
 
 <style>
+    #menu-link {
+        color: var(--spat);
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    
     .fullscreen-menu {
         cursor: none;
         position: relative;
@@ -55,6 +80,8 @@
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden; /* Ensures gradient overlay doesn't overflow */
+        margin-top: -100vh;
+        transition: .2s;
     }
 
     .fullscreen-menu::before {
