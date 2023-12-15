@@ -46,6 +46,11 @@
 <slot />
 
 <style>
+    @font-face {
+        font-family: 'FirstOrder'; /* Font name you'll use in your styles */
+        src: url('firstorder.ttf') format('truetype'); /* Path to your font file */
+    }
+
     .fullscreen-menu {
         cursor: none;
         position: relative;
@@ -77,6 +82,7 @@
         font-size: 1.2rem;
         text-shadow: 0px 0px 6rem #000;
         transition: .2s;
+        font-family: 'FirstOrder', sans-serif;
     }
 
     span:hover {
@@ -95,12 +101,14 @@
         padding: 0;
         font-size: 10vh;
         color: #f2f2f2;
+        margin-bottom: 1rem;
     }
 
     li {
         transition: .2s;
         width: max-content;
         text-shadow: 0px 0px 6rem #000;
+        font-family: 'FirstOrder', sans-serif;
     }
 
     li:hover {
