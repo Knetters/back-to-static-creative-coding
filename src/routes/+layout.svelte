@@ -69,6 +69,12 @@
         src: url('firstorder.ttf') format('truetype'); /* Path to your font file */
     }
 
+    #menu-link {
+        z-index: 9999;
+        color: var(--spat);
+        cursor: pointer;
+    }
+
     .fullscreen-menu {
         cursor: none;
         position: relative;
