@@ -410,7 +410,7 @@
   }
 
   h1, span {
-    text-shadow: 5px 0px 10px #282828;
+    text-shadow: 0px 0px 15px #282828;
   }
 
   .home-title {
