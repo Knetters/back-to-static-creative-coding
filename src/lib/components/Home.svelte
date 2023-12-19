@@ -359,7 +359,7 @@
         <img src="assets/bergje1.png" id="layer5" alt="berg illustratie" />
         <div id="text">
           <h1 class="home-title">Een nieuwe generatie hydrologen</h1>
-          <h2><span class="home-content">Concreet op water en bodem</span></h2>
+          <span class="home-content">Concreet op water en bodem</span>
         </div>
         <img
           src="assets/grondmobilee.png"
@@ -409,8 +409,12 @@
     width: 100vw;
   }
 
+  h1, span {
+    text-shadow: 5px 0px 10px #282828;
+  }
+
   .home-title {
-    color: var(--darkblue);
+    color: #f2f2f2;
     font-size: 1.5rem;
     font-weight: var(--font-medium);
     margin-bottom: 0.5rem;
@@ -589,7 +593,7 @@
     }
 
     .home-content2 {
-      color: var(--spat);
+      color: #f2f2f2;
       font-size: 1.5em;
       display: block;
       font-weight: var(--font-semi-bold);
@@ -597,7 +601,7 @@
     }
 
     .home-title2 {
-      color: var(--darkblue);
+      color: #f2f2f2;
       font-size: 2rem;
       margin-bottom: 0.5rem;
       margin-top: -15em;
