@@ -603,6 +603,7 @@
     .home-title2 {
       color: #f2f2f2;
       font-size: 2rem;
+      padding-top: 2rem;
       margin-bottom: 0.5rem;
       margin-top: -15em;
     }
